@@ -1,0 +1,8 @@
+--add-modules
+  mockserver.netty,jdk.unsupported,org.bouncycastle.provider,org.bouncycastle.pkix
+
+--add-opens
+  mockserver.jpms.playground/com.example=org.junit.platform.commons
+
+--add-reads
+  mockserver.jpms.playground=mockserver.netty
